@@ -3,8 +3,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./Chat";
 
-// Connect to the server using the appropriate URL
-const socket = io.connect("http://localhost:3007");
+const socket = io.connect("https://locahost:3004");
 
 function App() {
   const [username, setUsername] = useState("");
@@ -23,7 +22,7 @@ function App() {
       <div className="container">
         {!showChat ? (
           <div className="room--container">
-            <h2>Join na mga par</h2>
+            <h2>Join</h2>
             <div className="inputs">
               <input
                 className="username"
